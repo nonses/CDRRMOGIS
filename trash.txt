@@ -1,0 +1,16 @@
+
+ <?php 
+         $long;
+         $lat;
+         $sql = "SELECT * FROM evacuation_list";
+         $result = $db->connection->query($sql);
+         $count = mysqli_num_rows($result);
+         while($row = $result->fetch_assoc()){
+             "<script>
+                 var id = '".$row[id]."';
+                 var long'".$row[id]"' = '".$row[LAT]."';
+             </script>";
+         }   
+ ?>
+    sql = 
+   
